@@ -76,7 +76,10 @@ const SingleProduct = () => {
             </div>
           </div>
         </div>
-        <RelatedProducts />
+        <RelatedProducts
+          product={id}
+          categoryId={product.categories.data[0].id}
+        />
       </div>
     </div>
   );
